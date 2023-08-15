@@ -1,0 +1,28 @@
+class Doughnut {
+  cook() {
+    print "Fry until golden brown.";
+  }
+  thisFunc() {
+    print this;
+  }
+}
+
+class SomeClass {
+  init(){
+    this.enable = 2;
+  }
+  printEnable() {
+    print this.enable;
+  }
+}
+
+class BostonCream < Doughnut {
+  cook() {
+    super.cook();
+    print "Pipe full of custard and coat with chocolate.";
+  }
+}
+
+BostonCream().cook();
+Doughnut().thisFunc();
+SomeClass().printEnable();

@@ -1,0 +1,17 @@
+fun countDown(start, limit){
+    for(var count = start; count > 0; count = count - 1){
+        print count;
+        if(count > limit){
+            count = count - 1;
+        }
+    }
+}
+
+var i = 10;
+{
+    {
+        var i = 6;
+        countDown(i, 2);
+    }
+    countDown(i / 2, 3);
+}
